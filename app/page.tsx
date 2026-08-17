@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 
 const metrics = [
-  { value: "25+", label: "anos de carreira" },
-  { value: "12", label: "anos em liderança" },
-  { value: "3", label: "países em operação" },
-  { value: "30", label: "profissionais liderados" },
+  { value: "25+", label: "anos de experiência" },
+  { value: "30+", label: "profissionais liderados" },
+  { value: "10+", label: "projetos estratégicos" },
 ];
 
 const experiences = [
@@ -68,50 +67,62 @@ const projects = [
   {
     eyebrow: "M&A · CLOUD · SEGURANÇA",
     title: "Transformação pós-aquisição",
+    organization: "Osklen · Grupo DASS",
     description:
       "Separação tecnológica da Osklen após aquisição, com novo modelo de governança, liderança e operação própria.",
     result: "90 dias · 550 caixas postais · 32 servidores migrados",
     image: "/project-transformation.webp",
+    tags: ["M&A", "Cloud", "Governança", "Segurança"],
   },
   {
     eyebrow: "CLOUD · FINOPS",
     title: "Eficiência de infraestrutura",
+    organization: "Osklen",
     description:
       "Migração Azure para GCP, disciplina FinOps e renegociação do ecossistema Google Workspace com Gemini.",
     result: "35% menos custo de cloud · 30% menos licenciamento",
     image: "/hero-leadership.webp",
+    tags: ["GCP", "FinOps", "Google Workspace", "Cloud"],
   },
   {
     eyebrow: "CYBERSECURITY · LGPD",
     title: "Resiliência e proteção corporativa",
+    organization: "Osklen",
     description:
       "SOC/SIEM, WAF, vulnerabilidades, pentests, conscientização, comitê de privacidade e políticas LGPD.",
     result: "Zero ocorrências críticas por 18 meses",
     image: "/project-cybersecurity.webp",
+    tags: ["Cybersecurity", "LGPD", "SOC/SIEM", "WAF"],
   },
   {
     eyebrow: "DADOS · IA",
     title: "Lakehouse e automação inteligente",
+    organization: "Osklen",
     description:
       "Databricks, Unity Catalog, Power BI, Centro de Excelência em Dados, agentes de IA e capacitação das áreas.",
     result: "3 FTEs de ganho · ciclos de análise 60% menores",
     image: "/project-transformation.webp",
+    tags: ["Databricks", "Power BI", "IA Generativa", "Dados"],
   },
   {
     eyebrow: "OMNICHANNEL · VAREJO",
     title: "Comércio unificado e estoque",
+    organization: "Osklen",
     description:
       "VTEX headless, API First, PDV móvel, Ship from Store, Pickup Store, Prateleira Infinita e Onebeat.",
     result: "+6% no digital · 20% menos rupturas",
     image: "/project-transformation.webp",
+    tags: ["VTEX", "Omnichannel", "Onebeat", "API First"],
   },
   {
     eyebrow: "LIDERANÇA · OPERAÇÕES",
     title: "Times e execução estratégica",
+    organization: "Osklen · Grupo DASS",
     description:
       "Estruturação de equipes com desenvolvedores, tech leads, POs e BPOs e modernização da esteira DevOps.",
     result: "Mais de 70% de eficiência na entrega",
     image: "/project-leadership.webp",
+    tags: ["Liderança", "Agile", "DevOps", "Gestão"],
   },
 ];
 
@@ -210,8 +221,8 @@ export default function Home() {
             <a href="#contato">Contato</a>
           </nav>
 
-          <a className="header-cta" href="https://www.linkedin.com/in/alexcribeiro" target="_blank" rel="noreferrer">
-            LinkedIn <span aria-hidden="true">↗</span>
+          <a className="header-cta" href="#contato">
+            Conectar
           </a>
 
           <details className="mobile-menu">
@@ -231,18 +242,41 @@ export default function Home() {
         <section className="hero" id="inicio" aria-label="Apresentação profissional">
           <div className="hero-overlay" />
           <div className="content-shell hero-content">
-            <p className="hero-kicker">CIO · DIRETOR EXECUTIVO DE TECNOLOGIA</p>
-            <h1>Liderança em<br />Tecnologia</h1>
-            <p className="hero-subtitle">Transformação Digital <i /> Estratégia <i /> Inovação</p>
-            <p className="hero-description">
-              Conectando tecnologia, pessoas e operação para gerar crescimento,
-              eficiência, resiliência e vantagem competitiva.
-            </p>
-            <div className="hero-actions">
-              <a className="button button-primary" href="#sobre">Conheça minha trajetória</a>
-              <a className="button button-ghost" href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20id3.tech">
-                Vamos conversar
-              </a>
+            <div className="hero-layout">
+              <div className="hero-copy">
+                <p className="hero-kicker">CIO · DIRETOR EXECUTIVO DE TECNOLOGIA</p>
+                <h1>Liderança em<br />Tecnologia</h1>
+                <p className="hero-subtitle">Transformação Digital <i /> Estratégia <i /> Inovação</p>
+                <p className="hero-description">
+                  Mais de 25 anos conectando tecnologia e varejo, com liderança
+                  estratégica em transformação digital, dados, IA generativa,
+                  cloud e cibersegurança para entregar resultados mensuráveis.
+                </p>
+                <div className="hero-actions">
+                  <a className="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">→</span></a>
+                  <a className="button button-ghost" href="#contato">Conectar</a>
+                </div>
+              </div>
+
+              <div className="hero-portrait" aria-label="Retrato de Alex Ribeiro">
+                <span className="hero-portrait-ring ring-one" aria-hidden="true" />
+                <span className="hero-portrait-ring ring-two" aria-hidden="true" />
+                <img
+                  src="/aleksandro-ribeiro.png"
+                  alt="Aleksandro Castro Ribeiro"
+                  width="1086"
+                  height="1448"
+                />
+              </div>
+            </div>
+
+            <div className="hero-metrics" aria-label="Resumo da trajetória">
+              {metrics.map((metric) => (
+                <article key={metric.label}>
+                  <strong>{metric.value}</strong>
+                  <span>{metric.label}</span>
+                </article>
+              ))}
             </div>
           </div>
           <a className="scroll-cue" href="#sobre" aria-label="Ir para a seção Sobre">
@@ -252,8 +286,21 @@ export default function Home() {
 
         <section className="profile section" id="sobre">
           <div className="content-shell profile-grid">
+            <div className="portrait-wrap">
+              <div className="portrait-accent" aria-hidden="true" />
+              <img
+                src="/aleksandro-ribeiro.png"
+                alt="Aleksandro Castro Ribeiro"
+                width="1086"
+                height="1448"
+              />
+              <div className="portrait-badge">
+                <strong>25+</strong><span>anos transformando negócios</span>
+              </div>
+            </div>
+
             <div className="profile-copy">
-              <p className="section-eyebrow">SOBRE MIM</p>
+              <p className="section-eyebrow">PERFIL EXECUTIVO</p>
               <h2>Aleksandro<br /><span>Castro Ribeiro</span></h2>
               <p className="profile-role">CIO · Diretor Executivo de Tecnologia e Transformação</p>
               <p className="profile-lead">
@@ -267,55 +314,48 @@ export default function Home() {
                 transformações pós-M&A. Conecto tecnologia à estratégia para
                 ampliar receita, eficiência, giro de estoque, resiliência e segurança.
               </p>
+              <div className="profile-actions">
+                <a className="button button-blue" href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20id3.tech">Enviar email</a>
+                <a className="button button-outline" href="/alex-ribeiro-cv.pdf" download>Download CV</a>
+              </div>
               <div className="profile-links">
                 <a href="mailto:alexribeiro.cio@gmail.com">alexribeiro.cio@gmail.com</a>
                 <span>São Paulo, SP · disponibilidade para mudança</span>
               </div>
             </div>
-
-            <div className="portrait-wrap">
-              <div className="portrait-accent" aria-hidden="true" />
-              <img
-                src="/aleksandro-ribeiro.png"
-                alt="Aleksandro Castro Ribeiro"
-                width="1086"
-                height="1448"
-              />
-              <div className="portrait-badge">
-                <strong>25+</strong><span>anos transformando negócios</span>
-              </div>
-            </div>
           </div>
 
-          <div className="content-shell metric-grid" aria-label="Resumo da trajetória">
-            {metrics.map((metric) => (
-              <article key={metric.label}>
-                <strong>{metric.value}</strong><span>{metric.label}</span>
-              </article>
-            ))}
+          <div className="content-shell about-intro">
+            <p className="section-eyebrow">SOBRE MIM</p>
+            <h2>Estratégia, inovação e execução</h2>
+            <p>
+              Head de TI com expertise em transformação digital, liderança
+              estratégica e inovação. Especialista em governança, ERP,
+              e-commerce, cibersegurança, dados e conformidade regulatória.
+            </p>
           </div>
 
           <div className="content-shell about-cards">
             <article>
               <span className="card-icon" aria-hidden="true">↗</span>
-              <h3>Trajetória Profissional</h3>
+              <h3>Experiência</h3>
               <p>
-                Iniciou a carreira em 1998 na Grippon, passou por Mais Megalojas
-                e Lojas 3B/Burger King e liderou a reestruturação tecnológica da Osklen após M&A.
+                Mais de 25 anos em tecnologia e varejo, com passagem por Grippon,
+                Mais Megalojas, Lojas 3B/Burger King e Osklen.
               </p>
             </article>
             <article>
               <span className="card-icon" aria-hidden="true">◎</span>
-              <h3>Abordagem</h3>
+              <h3>Foco</h3>
               <p>
-                Combina visão de negócio, liderança de pessoas, governança e
-                profundidade técnica para transformar estratégia em execução mensurável.
+                Estratégia, inovação digital, excelência operacional e soluções
+                que geram impacto real nos resultados do negócio.
               </p>
             </article>
             <article>
-              <span className="card-icon" aria-hidden="true">A</span>
-              <h3>Idiomas</h3>
-              <p>Inglês avançado e espanhol intermediário para atuação em ambientes multiculturais.</p>
+              <span className="card-icon" aria-hidden="true">◇</span>
+              <h3>Liderança</h3>
+              <p>Desenvolvimento de equipes de alto desempenho e alinhamento entre tecnologia, negócio e pessoas.</p>
             </article>
           </div>
         </section>
@@ -381,8 +421,12 @@ export default function Home() {
                   <div className="project-body">
                     <p className="project-eyebrow">{project.eyebrow}</p>
                     <h3>{project.title}</h3>
+                    <p className="project-organization">{project.organization}</p>
                     <p>{project.description}</p>
                     <div className="project-result"><span aria-hidden="true">✓</span>{project.result}</div>
+                    <div className="project-tags">
+                      {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                    </div>
                   </div>
                 </article>
               ))}
@@ -435,23 +479,29 @@ export default function Home() {
           <div className="content-shell contact-shell">
             <div className="contact-copy">
               <p className="section-eyebrow">CONTATO</p>
-              <h2>Vamos<br /><span>conectar?</span></h2>
+              <h2>Vamos conectar</h2>
               <p>
-                Aberto a conversas sobre liderança executiva, transformação,
-                varejo, dados, inteligência artificial e cibersegurança.
+                Estou aberto a novas oportunidades, discussões estratégicas e
+                projetos inovadores em tecnologia e transformação.
               </p>
             </div>
-            <div className="contact-card">
-              <span className="contact-icon" aria-hidden="true">@</span>
-              <div>
-                <p>Email</p>
-                <a href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20id3.tech">alexribeiro.cio@gmail.com</a>
-              </div>
+            <div className="contact-grid">
+              <a className="contact-card" href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20id3.tech">
+                <span className="contact-icon" aria-hidden="true">@</span>
+                <div><p>Email</p><strong>alexribeiro.cio@gmail.com</strong></div>
+              </a>
+              <article className="contact-card">
+                <span className="contact-icon" aria-hidden="true">⌖</span>
+                <div><p>Localização</p><strong>São Paulo, Brasil</strong></div>
+              </article>
+              <a className="contact-card" href="https://www.linkedin.com/in/alexcribeiro" target="_blank" rel="noreferrer">
+                <span className="contact-icon" aria-hidden="true">in</span>
+                <div><p>LinkedIn</p><strong>linkedin.com/in/alexcribeiro</strong></div>
+              </a>
             </div>
-            <div className="contact-links">
-              <a href="https://www.linkedin.com/in/alexcribeiro" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-              <a href="https://github.com/alexribeirocio-eng" target="_blank" rel="noreferrer">GitHub ↗</a>
-              <a href="https://id3.tech">ID3 Tech ↗</a>
+            <div className="contact-actions">
+              <a className="button button-primary" href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20id3.tech">Enviar email</a>
+              <a className="button button-outline" href="https://www.linkedin.com/in/alexcribeiro" target="_blank" rel="noreferrer">Abrir LinkedIn ↗</a>
             </div>
           </div>
         </section>
@@ -459,8 +509,26 @@ export default function Home() {
 
       <footer>
         <div className="content-shell footer-shell">
-          <div className="brand footer-brand"><span className="brand-monogram" aria-hidden="true">AR</span><span className="brand-name">Alex Ribeiro</span></div>
-          <p>© {new Date().getFullYear()} Aleksandro Castro Ribeiro. ID3.TECH</p>
+          <div className="footer-profile">
+            <div className="brand footer-brand"><span className="brand-monogram" aria-hidden="true">AR</span><span className="brand-name">Alex Ribeiro</span></div>
+            <p>CIO · Liderança Estratégica · Transformação Digital</p>
+          </div>
+          <nav aria-label="Links rápidos do rodapé">
+            <strong>Links rápidos</strong>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#competencias">Competências</a>
+          </nav>
+          <nav aria-label="Conecte-se">
+            <strong>Conecte-se</strong>
+            <a href="https://www.linkedin.com/in/alexcribeiro" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="mailto:alexribeiro.cio@gmail.com">Email ↗</a>
+            <a href="https://github.com/alexribeirocio-eng" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </nav>
+        </div>
+        <div className="content-shell footer-bottom">
+          <p>© {new Date().getFullYear()} Aleksandro Castro Ribeiro. Todos os direitos reservados.</p>
           <a href="#inicio">Voltar ao topo ↑</a>
         </div>
       </footer>
