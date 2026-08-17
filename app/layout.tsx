@@ -27,9 +27,9 @@ export async function generateMetadata(): Promise<Metadata> {
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
   const baseUrl = new URL(`${protocol}://${host}`);
-  const title = "Aleksandro Ribeiro | CIO e Diretor Executivo de Tecnologia";
+  const title = "Alexsandro Ribeiro | CIO e Diretor Executivo de Tecnologia";
   const description =
-    "CV virtual de Aleksandro Ribeiro, CIO e Diretor Executivo de Tecnologia com 25+ anos de carreira em varejo, omnichannel, dados, IA e cibersegurança.";
+    "CV virtual de Alexsandro Ribeiro, CIO e Diretor Executivo de Tecnologia com 25+ anos de carreira em varejo, omnichannel, dados, IA e cibersegurança.";
   const socialImage = new URL("/og-4x3.png", baseUrl).toString();
 
   return {
@@ -37,7 +37,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title,
     description,
     keywords: [
-      "Aleksandro Ribeiro",
+      "Alexsandro Ribeiro",
       "Alex Ribeiro CIO",
       "CIO",
       "Diretor Executivo de Tecnologia",
@@ -45,8 +45,8 @@ export async function generateMetadata(): Promise<Metadata> {
       "cybersecurity",
       "dados e inteligência artificial",
     ],
-    authors: [{ name: "Aleksandro Castro Ribeiro" }],
-    creator: "Aleksandro Castro Ribeiro",
+    authors: [{ name: "Alexsandro Castro Ribeiro" }],
+    creator: "Alexsandro Castro Ribeiro",
     alternates: { canonical: "/" },
     icons: {
       icon: "/favicon.svg",
@@ -56,7 +56,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "profile",
       locale: "pt_BR",
       url: "/",
-      siteName: "Aleksandro Ribeiro — CV Virtual",
+      siteName: "Alexsandro Ribeiro — CV Virtual",
       title,
       description,
       images: [
@@ -64,7 +64,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: socialImage,
           width: 1448,
           height: 1086,
-          alt: "Aleksandro Ribeiro — CIO, Tecnologia, Varejo, Dados e IA",
+          alt: "Alexsandro Ribeiro — CIO, Tecnologia, Varejo, Dados e IA",
         },
       ],
     },

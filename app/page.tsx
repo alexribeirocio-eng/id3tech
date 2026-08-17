@@ -169,7 +169,7 @@ const competencies = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Aleksandro Castro Ribeiro",
+  name: "Alexsandro Castro Ribeiro",
   alternateName: "Alex Ribeiro",
   url: "https://id3.tech",
   email: "mailto:alexribeiro.cio@gmail.com",
@@ -262,8 +262,8 @@ export default function Home() {
                 <span className="hero-portrait-ring ring-one" aria-hidden="true" />
                 <span className="hero-portrait-ring ring-two" aria-hidden="true" />
                 <img
-                  src="/aleksandro-ribeiro.png"
-                  alt="Aleksandro Castro Ribeiro"
+                  src="/alexsandro-ribeiro.png"
+                  alt="Alexsandro Castro Ribeiro"
                   width="1086"
                   height="1448"
                 />
@@ -289,8 +289,8 @@ export default function Home() {
             <div className="portrait-wrap">
               <div className="portrait-accent" aria-hidden="true" />
               <img
-                src="/aleksandro-ribeiro.png"
-                alt="Aleksandro Castro Ribeiro"
+                src="/alexsandro-ribeiro.png"
+                alt="Alexsandro Castro Ribeiro"
                 width="1086"
                 height="1448"
               />
@@ -301,7 +301,7 @@ export default function Home() {
 
             <div className="profile-copy">
               <p className="section-eyebrow">PERFIL EXECUTIVO</p>
-              <h2>Aleksandro<br /><span>Castro Ribeiro</span></h2>
+              <h2>Alexsandro<br /><span>Castro Ribeiro</span></h2>
               <p className="profile-role">CIO · Diretor Executivo de Tecnologia e Transformação</p>
               <p className="profile-lead">
                 Executivo de tecnologia com mais de 25 anos de carreira e cerca
@@ -528,7 +528,7 @@ export default function Home() {
           </nav>
         </div>
         <div className="content-shell footer-bottom">
-          <p>© {new Date().getFullYear()} Aleksandro Castro Ribeiro. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Alexsandro Castro Ribeiro. Todos os direitos reservados.</p>
           <a href="#inicio">Voltar ao topo ↑</a>
         </div>
       </footer>

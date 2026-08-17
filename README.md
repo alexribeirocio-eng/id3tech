@@ -1,6 +1,6 @@
 # ID3 Tech — CV Virtual
 
-CV virtual de Aleksandro Castro Ribeiro, preparado para publicação em `id3.tech`.
+CV virtual de Alexsandro Castro Ribeiro, preparado para publicação em `id3.tech`.
 
 ## Desenvolvimento
 
