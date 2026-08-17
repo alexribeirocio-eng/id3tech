@@ -32,7 +32,7 @@ test("renders the virtual CV with discovery metadata", async () => {
   assert.match(html, /<title>Aleksandro Ribeiro \| CIO/);
   assert.match(html, /Aleksandro[\s\S]*Ribeiro\./);
   assert.match(html, /application\/ld\+json/);
-  assert.match(html, /https:\/\/id3\.tech\/og\.png/);
+  assert.match(html, /https:\/\/id3\.tech\/og-v2\.png/);
   assert.match(html, /alexribeiro\.cio@gmail\.com/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|SkeletonPreview/);
 });
