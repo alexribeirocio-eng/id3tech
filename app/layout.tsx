@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = "Aleksandro Ribeiro | CIO e Diretor Executivo de Tecnologia";
   const description =
     "CV virtual de Aleksandro Ribeiro, CIO e Diretor Executivo de Tecnologia com 25+ anos de carreira em varejo, omnichannel, dados, IA e cibersegurança.";
-  const socialImage = new URL("/og-v2.png", baseUrl).toString();
+  const socialImage = new URL("/og-4x3.png", baseUrl).toString();
 
   return {
     metadataBase: baseUrl,
@@ -62,8 +62,8 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [
         {
           url: socialImage,
-          width: 1200,
-          height: 630,
+          width: 1448,
+          height: 1086,
           alt: "Aleksandro Ribeiro — CIO, Tecnologia, Varejo, Dados e IA",
         },
       ],
