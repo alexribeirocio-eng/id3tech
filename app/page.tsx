@@ -1,152 +1,169 @@
-const capabilities = [
-  {
-    index: "01",
-    title: "Estratégia & Transformação",
-    label: "TECH_TO_BUSINESS",
-    description:
-      "Estratégia de tecnologia, transformação digital, governança, M&A e integração de operações conectadas às prioridades do negócio.",
-    tags: ["Board", "M&A", "Capex/Opex"],
-  },
-  {
-    index: "02",
-    title: "Varejo & Omnichannel",
-    label: "CONNECTED_RETAIL",
-    description:
-      "Ecossistemas de varejo físico e digital, e-commerce, ERP, logística e experiência do cliente com visão ponta a ponta.",
-    tags: ["VTEX", "ERP", "S&OP"],
-  },
-  {
-    index: "03",
-    title: "Dados & Inteligência Artificial",
-    label: "DATA_TO_DECISION",
-    description:
-      "Lakehouse, analytics executivo, IA generativa e automação para acelerar decisões, produtividade e autonomia das áreas.",
-    tags: ["Databricks", "Power BI", "Gemini"],
-  },
-  {
-    index: "04",
-    title: "Cloud & Cibersegurança",
-    label: "RESILIENT_OPERATIONS",
-    description:
-      "Cloud, FinOps, continuidade, privacidade e segurança com foco em resiliência, eficiência e gestão de riscos.",
-    tags: ["GCP/Azure", "SOC/SIEM", "LGPD"],
-  },
-];
+/* eslint-disable @next/next/no-img-element */
 
-const keyResults = [
-  { value: "35%", label: "menor custo anual de cloud" },
-  { value: "+6%", label: "no faturamento digital" },
-  { value: "60%", label: "menos tempo nos ciclos de análise" },
-  { value: "20%", label: "menos rupturas de estoque" },
-  { value: "3 FTEs", label: "de ganho equivalente com IA" },
+const metrics = [
+  { value: "25+", label: "anos de experiência" },
+  { value: "30+", label: "profissionais liderados" },
+  { value: "10+", label: "projetos estratégicos" },
 ];
 
 const experiences = [
   {
     company: "OSKLEN · GRUPO DASS",
-    location: "Rio de Janeiro / São Paulo",
-    period: "ago 2022 — mar 2026",
     role: "Gerente Executivo de TI / Head de TI",
-    intro:
-      "Reestruturação da tecnologia após aquisição pelo Grupo DASS, com reporte ao CFO/CEO e gestão de 30 profissionais. Escopo sobre Tecnologia, Sistemas, Infraestrutura, Dados, Cibersegurança e integrações em uma operação no Brasil, Uruguai e Estados Unidos.",
+    period: "ago 2022 — mar 2026",
+    location: "Rio de Janeiro / São Paulo",
+    summary:
+      "Reestruturação da tecnologia após aquisição pelo Grupo DASS, com reporte ao CFO/CEO e gestão de 30 profissionais em uma operação no Brasil, Uruguai e Estados Unidos.",
     highlights: [
-      "Instituiu governança executiva, planejamento orçamentário e gestão de contratos, conectando investimentos à agenda do board.",
-      "Migrou o ambiente Azure para GCP e implantou FinOps, reduzindo em 35% o custo anual de infraestrutura; renegociou o Google Workspace com redução adicional de 30%.",
-      "Construiu a plataforma de dados com Databricks Lakehouse, Unity Catalog e Power BI e estabeleceu o Centro de Excelência em Dados.",
-      "Aplicou IA generativa, agentes e automações, gerando ganho equivalente a 3 FTEs e redução de 60% nos ciclos de análise.",
-      "Estruturou SOC/SIEM, WAF, vulnerabilidades, pentests e políticas LGPD, mantendo zero ocorrências críticas por 18 meses.",
-      "Apoiou a migração do e-commerce para VTEX headless/API First, contribuindo para aumento de 6% no faturamento digital, e implantou Onebeat, reduzindo rupturas em 20%.",
+      "Governança executiva, planejamento orçamentário e gestão de contratos e fornecedores estratégicos.",
+      "Migração Azure para GCP e disciplina FinOps, reduzindo em 35% o custo anual de infraestrutura.",
+      "Databricks Lakehouse, Unity Catalog, Power BI e Centro de Excelência em Dados.",
+      "IA generativa e automações com ganho equivalente a 3 FTEs e ciclos de análise 60% menores.",
+      "SOC/SIEM, WAF, pentests e políticas LGPD com zero ocorrências críticas por 18 meses.",
+      "VTEX headless/API First com aumento de 6% no faturamento digital e Onebeat com 20% menos rupturas.",
     ],
   },
   {
     company: "BURGER KING · LOJAS 3B · WFP HOLDING",
-    location: "São Paulo / Rio de Janeiro",
-    period: "mar 2017 — jul 2022",
     role: "Diretor de TI / COO (CIO/COO)",
-    intro:
-      "Reporte ao CEO, liderança de equipes de até 30 profissionais e consolidação da tecnologia do varejo físico e online, incluindo a gestão operacional de uma franquia Burger King.",
+    period: "mar 2017 — jul 2022",
+    location: "São Paulo / Rio de Janeiro",
+    summary:
+      "Reporte ao CEO, liderança de times de até 30 profissionais e consolidação da tecnologia do varejo físico e online, incluindo gestão operacional de franquia.",
     highlights: [
-      "Estabilizou o ambiente de vendas e implantou gestão de crises, reduzindo em 57% os incidentes e em 32% os problemas operacionais.",
-      "Implantou operação TechFin com cartão private label e produtos financeiros, ampliando em 25% a participação dos novos meios de pagamento.",
-      "Estruturou e-commerce VTEX integrado ao ERP Linx e WMS, com automações S&OP e operação omnichannel.",
-      "Conduziu o retrofit da franquia Burger King e a revisão estratégica da operação, alcançando breakeven em 18 meses.",
+      "Gestão de crises com redução de 57% nos incidentes e 32% nos problemas operacionais.",
+      "Operação TechFin e private label, ampliando em 25% a participação dos novos meios de pagamento.",
+      "E-commerce VTEX integrado ao ERP Linx e WMS com automações S&OP e operação omnichannel.",
+      "Retrofit e revisão estratégica da franquia Burger King, alcançando breakeven em 18 meses.",
     ],
   },
   {
     company: "MAIS MEGALOJAS · HOLDING VM BUSINESS",
-    location: "São Paulo / Rio de Janeiro",
-    period: "abr 2014 — fev 2017",
     role: "Diretor de TI",
-    intro:
-      "Responsável pela tecnologia de uma operação com 14 lojas de departamentos, cinco centros comerciais e centro de distribuição, com reporte aos sócios.",
+    period: "abr 2014 — fev 2017",
+    location: "São Paulo / Rio de Janeiro",
+    summary:
+      "Direção de tecnologia em uma operação com 14 lojas de departamentos, cinco centros comerciais e centro de distribuição, com reporte aos sócios.",
     highlights: [
-      "Liderou estratégia, planejamento, arquitetura, orçamento, governança, contratos e portfólio de projetos de tecnologia.",
-      "Acumulou responsabilidades de Operações e apoiou negócios de varejo e real estate, direcionando tecnologia para eficiência e expansão.",
+      "Estratégia, arquitetura, orçamento, governança, contratos e portfólio de projetos.",
+      "Responsabilidades de Operações e apoio aos negócios de varejo e real estate.",
     ],
   },
   {
     company: "GRIPPON COMÉRCIO DE ROUPAS",
-    location: "SP, RJ, BA, MG, PR e RS",
+    role: "Gerente de TI / Coordenador / Analista Sênior",
     period: "ago 1998 — mar 2014",
-    role: "Gerente de TI / Coordenador de Tecnologia / Analista Sênior",
-    intro:
+    location: "SP, RJ, BA, MG, PR e RS",
+    summary:
       "Trajetória de crescimento em uma rede multirregional de varejo de moda, sustentando a expansão da operação e a evolução dos processos de negócio.",
     highlights: [
-      "Construiu e reestruturou a área de TI, liderando equipe de analistas e a sustentação tecnológica da rede.",
-      "Conduziu desenvolvimento de sistemas, implantação e integração de ERP e parcerias com fornecedores e consultorias.",
+      "Construção e reestruturação da área de TI e liderança de equipe de analistas.",
+      "Desenvolvimento de sistemas, implantação e integração de ERP e gestão de parceiros.",
     ],
   },
 ];
 
-const education = [
+const projects = [
   {
-    course: "Gestão de Pessoas com Ênfase em Liderança Organizacional",
-    institution: "FIA Business School",
-    year: "2021",
+    eyebrow: "M&A · CLOUD · SEGURANÇA",
+    title: "Transformação pós-aquisição",
+    organization: "Osklen · Grupo DASS",
+    description:
+      "Separação tecnológica da Osklen após aquisição, com novo modelo de governança, liderança e operação própria.",
+    result: "90 dias · 550 caixas postais · 32 servidores migrados",
+    image: "/project-transformation.webp",
+    tags: ["M&A", "Cloud", "Governança", "Segurança"],
   },
   {
-    course: "MBA em Gestão Estratégica da Tecnologia da Informação",
-    institution: "Fundação Getulio Vargas (FGV)",
-    year: "2014",
+    eyebrow: "CLOUD · FINOPS",
+    title: "Eficiência de infraestrutura",
+    organization: "Osklen",
+    description:
+      "Migração Azure para GCP, disciplina FinOps e renegociação do ecossistema Google Workspace com Gemini.",
+    result: "35% menos custo de cloud · 30% menos licenciamento",
+    image: "/hero-leadership.webp",
+    tags: ["GCP", "FinOps", "Google Workspace", "Cloud"],
   },
   {
-    course: "Tecnologia em Informática",
-    institution: "FATEC Santo André",
-    year: "2000",
+    eyebrow: "CYBERSECURITY · LGPD",
+    title: "Resiliência e proteção corporativa",
+    organization: "Osklen",
+    description:
+      "SOC/SIEM, WAF, vulnerabilidades, pentests, conscientização, comitê de privacidade e políticas LGPD.",
+    result: "Zero ocorrências críticas por 18 meses",
+    image: "/project-cybersecurity.webp",
+    tags: ["Cybersecurity", "LGPD", "SOC/SIEM", "WAF"],
+  },
+  {
+    eyebrow: "DADOS · IA",
+    title: "Lakehouse e automação inteligente",
+    organization: "Osklen",
+    description:
+      "Databricks, Unity Catalog, Power BI, Centro de Excelência em Dados, agentes de IA e capacitação das áreas.",
+    result: "3 FTEs de ganho · ciclos de análise 60% menores",
+    image: "/project-transformation.webp",
+    tags: ["Databricks", "Power BI", "IA Generativa", "Dados"],
+  },
+  {
+    eyebrow: "OMNICHANNEL · VAREJO",
+    title: "Comércio unificado e estoque",
+    organization: "Osklen",
+    description:
+      "VTEX headless, API First, PDV móvel, Ship from Store, Pickup Store, Prateleira Infinita e Onebeat.",
+    result: "+6% no digital · 20% menos rupturas",
+    image: "/project-transformation.webp",
+    tags: ["VTEX", "Omnichannel", "Onebeat", "API First"],
+  },
+  {
+    eyebrow: "LIDERANÇA · OPERAÇÕES",
+    title: "Times e execução estratégica",
+    organization: "Osklen · Grupo DASS",
+    description:
+      "Estruturação de equipes com desenvolvedores, tech leads, POs e BPOs e modernização da esteira DevOps.",
+    result: "Mais de 70% de eficiência na entrega",
+    image: "/project-leadership.webp",
+    tags: ["Liderança", "Agile", "DevOps", "Gestão"],
   },
 ];
 
-const technologies = [
-  "GCP",
-  "Azure",
-  "Google Workspace",
-  "BigQuery",
-  "Databricks",
-  "Unity Catalog",
-  "Power BI",
-  "Gemini",
-  "SAP B1",
-  "Oracle",
-  "TOTVS Protheus",
-  "Linx",
-  "Senior",
-  "Millennium",
-  "VTEX",
-  "WMS",
-  "PLM Umode",
-  "Onebeat",
-  "API First",
-  "GitHub",
-  "CI/CD",
-  "SOC/SIEM",
-  "WAF",
-  "ISO 27000",
-  "NIST",
-  "CIS Controls",
-  "PCI DSS",
-  "ITIL",
-  "COBIT",
-  "Governança de IA",
+const competencies = [
+  {
+    icon: "↗",
+    title: "Liderança & Estratégia",
+    tags: [
+      "Liderança Executiva",
+      "Planejamento Estratégico",
+      "Transformação Digital",
+      "Gestão de Mudanças",
+      "M&A",
+      "Board",
+    ],
+  },
+  {
+    icon: "◇",
+    title: "Segurança & Conformidade",
+    tags: ["Cibersegurança", "LGPD", "PCI DSS", "ISO 27000", "NIST", "SOC/SIEM", "WAF"],
+  },
+  {
+    icon: "☁",
+    title: "Cloud & Infraestrutura",
+    tags: ["GCP", "Azure", "FinOps", "Google Workspace", "Continuidade", "Resiliência"],
+  },
+  {
+    icon: "◎",
+    title: "Dados & Analytics",
+    tags: ["Databricks", "BigQuery", "Unity Catalog", "Power BI", "Lakehouse", "Governança"],
+  },
+  {
+    icon: "⌘",
+    title: "Varejo & Operações",
+    tags: ["VTEX", "Linx", "Protheus", "WMS", "S&OP", "PLM", "Onebeat", "Omnichannel"],
+  },
+  {
+    icon: "✦",
+    title: "IA & Inovação",
+    tags: ["Gemini", "IA Generativa", "Agentes", "Automação", "Apps Script", "API First", "CI/CD"],
+  },
 ];
 
 const jsonLd = {
@@ -154,7 +171,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Aleksandro Castro Ribeiro",
   alternateName: "Alex Ribeiro",
-  url: "https://id3tech.com",
+  url: "https://id3.tech",
   email: "mailto:alexribeiro.cio@gmail.com",
   jobTitle: "CIO e Diretor Executivo de Tecnologia e Transformação",
   address: {
@@ -174,7 +191,7 @@ const jsonLd = {
   affiliation: {
     "@type": "Organization",
     name: "ID3 Tech",
-    url: "https://www.id3.com.br",
+    url: "https://id3.tech",
   },
   sameAs: [
     "https://www.linkedin.com/in/alexcribeiro",
@@ -190,37 +207,31 @@ export default function Home() {
       </a>
 
       <header className="site-header">
-        <div className="nav-shell">
-          <a className="brand" href="#inicio" aria-label="Aleksandro Ribeiro — início">
-            <span className="brand-mark" aria-hidden="true">
-              ID3
-            </span>
-            <span className="brand-copy">
-              <strong>TECH</strong>
-              <small>CV PROFISSIONAL</small>
-            </span>
+        <div className="header-shell">
+          <a className="brand" href="#inicio" aria-label="Alex Ribeiro — início">
+            <span className="brand-monogram" aria-hidden="true">AR</span>
+            <span className="brand-name">Alex Ribeiro</span>
           </a>
 
           <nav className="desktop-nav" aria-label="Navegação principal">
-            <a href="#perfil">Perfil</a>
-            <a href="#resultados">Resultados</a>
+            <a href="#sobre">Sobre</a>
             <a href="#experiencia">Experiência</a>
-            <a href="#formacao">Formação</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#competencias">Competências</a>
+            <a href="#contato">Contato</a>
           </nav>
 
-          <a className="header-contact" href="#contato">
-            Contato <span aria-hidden="true">↗</span>
+          <a className="header-cta" href="#contato">
+            Conectar
           </a>
 
-          <details className="mobile-nav">
+          <details className="mobile-menu">
             <summary aria-label="Abrir menu">Menu</summary>
             <nav aria-label="Navegação móvel">
-              <a href="#perfil">Perfil</a>
-              <a href="#competencias">Competências</a>
-              <a href="#resultados">Resultados</a>
+              <a href="#sobre">Sobre</a>
               <a href="#experiencia">Experiência</a>
-              <a href="#formacao">Formação</a>
-              <a href="#projeto">ID3 Tech</a>
+              <a href="#projetos">Projetos</a>
+              <a href="#competencias">Competências</a>
               <a href="#contato">Contato</a>
             </nav>
           </details>
@@ -228,353 +239,301 @@ export default function Home() {
       </header>
 
       <main id="conteudo">
-        <section className="hero section-shell" id="inicio">
-          <div className="hero-glow" aria-hidden="true" />
-          <div className="hero-grid">
-            <div className="hero-copy">
-              <p className="eyebrow">
-                <span className="status-dot" aria-hidden="true" />
-                CIO · Diretor Executivo de Tecnologia e Transformação
-              </p>
-              <h1>
-                Aleksandro
-                <br />
-                <span>Ribeiro.</span>
-              </h1>
-              <p className="hero-lead">
-                Tecnologia conectada à <strong>estratégia</strong>, à eficiência e
-                ao crescimento do negócio.
-              </p>
-              <p className="hero-summary">
-                Executivo com mais de 25 anos de carreira e cerca de 12 anos em
-                posições de liderança, com experiência em varejo, moda, luxo,
-                lifestyle, food service e real estate.
-              </p>
-              <div className="hero-actions">
-                <a
-                  className="button button-primary"
-                  href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20CV%20virtual"
-                >
-                  Iniciar conversa <span aria-hidden="true">→</span>
-                </a>
-                <a
-                  className="button button-secondary"
-                  href="https://www.linkedin.com/in/alexcribeiro"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver LinkedIn
-                </a>
+        <section className="hero" id="inicio" aria-label="Apresentação profissional">
+          <div className="hero-overlay" />
+          <div className="content-shell hero-content">
+            <div className="hero-layout">
+              <div className="hero-copy">
+                <p className="hero-kicker">CIO · DIRETOR EXECUTIVO DE TECNOLOGIA</p>
+                <h1>Liderança em<br />Tecnologia</h1>
+                <p className="hero-subtitle">Transformação Digital <i /> Estratégia <i /> Inovação</p>
+                <p className="hero-description">
+                  Mais de 25 anos conectando tecnologia e varejo, com liderança
+                  estratégica em transformação digital, dados, IA generativa,
+                  cloud e cibersegurança para entregar resultados mensuráveis.
+                </p>
+                <div className="hero-actions">
+                  <a className="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">→</span></a>
+                  <a className="button button-ghost" href="#contato">Conectar</a>
+                </div>
+              </div>
+
+              <div className="hero-portrait" aria-label="Retrato de Alex Ribeiro">
+                <span className="hero-portrait-ring ring-one" aria-hidden="true" />
+                <span className="hero-portrait-ring ring-two" aria-hidden="true" />
+                <img
+                  src="/aleksandro-ribeiro.png"
+                  alt="Aleksandro Castro Ribeiro"
+                  width="1086"
+                  height="1448"
+                />
               </div>
             </div>
 
-            <aside className="signal-panel" aria-label="Resumo profissional">
-              <div className="panel-topline">
-                <span>EXEC_PROFILE</span>
-                <span className="panel-live">OPEN_TO_CONNECT</span>
-              </div>
-              <div className="monogram" aria-hidden="true">
-                <span>AR</span>
-              </div>
-              <div className="signal-row">
-                <span>CARREIRA</span>
-                <strong>25+ anos em tecnologia</strong>
-              </div>
-              <div className="signal-row">
-                <span>LIDERANÇA</span>
-                <strong>12 anos · times de até 30</strong>
-              </div>
-              <div className="signal-row">
-                <span>OPERAÇÕES</span>
-                <strong>Brasil · Uruguai · EUA</strong>
-              </div>
-              <div className="signal-bars" aria-hidden="true">
-                {Array.from({ length: 22 }, (_, index) => (
-                  <i key={index} style={{ height: `${24 + ((index * 17) % 62)}%` }} />
-                ))}
-              </div>
-            </aside>
+            <div className="hero-metrics" aria-label="Resumo da trajetória">
+              {metrics.map((metric) => (
+                <article key={metric.label}>
+                  <strong>{metric.value}</strong>
+                  <span>{metric.label}</span>
+                </article>
+              ))}
+            </div>
           </div>
-          <div className="hero-strip" aria-label="Síntese da trajetória">
-            <span>Varejo & Omnichannel</span>
-            <i aria-hidden="true" />
-            <span>Dados & IA</span>
-            <i aria-hidden="true" />
-            <span>Eficiência Operacional</span>
-            <i aria-hidden="true" />
-            <span>Cibersegurança</span>
-          </div>
+          <a className="scroll-cue" href="#sobre" aria-label="Ir para a seção Sobre">
+            <span>Explorar</span><i aria-hidden="true">↓</i>
+          </a>
         </section>
 
-        <section className="profile section-shell" id="perfil">
-          <div className="section-label">{"// 01 — PERFIL EXECUTIVO"}</div>
-          <div className="profile-grid">
-            <h2>
-              Visão de tecnologia
-              <br />
-              conectada ao <span>negócio.</span>
-            </h2>
+        <section className="profile section" id="sobre">
+          <div className="content-shell profile-grid">
+            <div className="portrait-wrap">
+              <div className="portrait-accent" aria-hidden="true" />
+              <img
+                src="/aleksandro-ribeiro.png"
+                alt="Aleksandro Castro Ribeiro"
+                width="1086"
+                height="1448"
+              />
+              <div className="portrait-badge">
+                <strong>25+</strong><span>anos transformando negócios</span>
+              </div>
+            </div>
+
             <div className="profile-copy">
+              <p className="section-eyebrow">PERFIL EXECUTIVO</p>
+              <h2>Aleksandro<br /><span>Castro Ribeiro</span></h2>
+              <p className="profile-role">CIO · Diretor Executivo de Tecnologia e Transformação</p>
+              <p className="profile-lead">
+                Executivo de tecnologia com mais de 25 anos de carreira e cerca
+                de 12 anos em posições de liderança nos segmentos de varejo,
+                moda, luxo, lifestyle, food service e real estate.
+              </p>
               <p>
                 Experiência como Head de TI, Diretor de TI e COO, com reporte a
                 CEO/CFO, participação em comitês executivos e liderança de
-                transformações pós-M&A.
+                transformações pós-M&A. Conecto tecnologia à estratégia para
+                ampliar receita, eficiência, giro de estoque, resiliência e segurança.
               </p>
-              <p>
-                Conecta tecnologia à estratégia para ampliar receita, eficiência,
-                giro de estoque, resiliência operacional e segurança, combinando
-                profundidade técnica, visão financeira e liderança de times.
-              </p>
-              <div className="profile-quote">
-                <span aria-hidden="true">“</span>
-                <p>
-                  Mentalidade de tecnologia,
-                  <br />
-                  linguagem de negócio.
-                </p>
+              <div className="profile-actions">
+                <a className="button button-blue" href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20id3.tech">Enviar email</a>
+                <a className="button button-outline" href="/alex-ribeiro-cv.pdf" download>Download CV</a>
+              </div>
+              <div className="profile-links">
+                <a href="mailto:alexribeiro.cio@gmail.com">alexribeiro.cio@gmail.com</a>
+                <span>São Paulo, SP · disponibilidade para mudança</span>
               </div>
             </div>
           </div>
-        </section>
 
-        <section className="capabilities section-shell" id="competencias">
-          <div className="section-heading">
-            <div>
-              <div className="section-label">{"// 02 — COMPETÊNCIAS"}</div>
-              <h2>Frentes de atuação</h2>
-            </div>
+          <div className="content-shell about-intro">
+            <p className="section-eyebrow">SOBRE MIM</p>
+            <h2>Estratégia, inovação e execução</h2>
             <p>
-              Liderança executiva para integrar estratégia, operações,
-              arquitetura, dados, segurança e experiência do cliente.
+              Head de TI com expertise em transformação digital, liderança
+              estratégica e inovação. Especialista em governança, ERP,
+              e-commerce, cibersegurança, dados e conformidade regulatória.
             </p>
           </div>
-          <div className="capability-grid">
-            {capabilities.map((capability) => (
-              <article className="capability-card" key={capability.index}>
-                <div className="card-index">{capability.index}</div>
-                <div className="card-symbol" aria-hidden="true">
-                  {capability.index === "01" && "⌁"}
-                  {capability.index === "02" && "◇"}
-                  {capability.index === "03" && "✦"}
-                  {capability.index === "04" && "☁"}
-                </div>
-                <p className="card-label">{`// ${capability.label}`}</p>
-                <h3>{capability.title}</h3>
-                <p>{capability.description}</p>
-                <div className="tag-list">
-                  {capability.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
-                </div>
-              </article>
-            ))}
+
+          <div className="content-shell about-cards">
+            <article>
+              <span className="card-icon" aria-hidden="true">↗</span>
+              <h3>Experiência</h3>
+              <p>
+                Mais de 25 anos em tecnologia e varejo, com passagem por Grippon,
+                Mais Megalojas, Lojas 3B/Burger King e Osklen.
+              </p>
+            </article>
+            <article>
+              <span className="card-icon" aria-hidden="true">◎</span>
+              <h3>Foco</h3>
+              <p>
+                Estratégia, inovação digital, excelência operacional e soluções
+                que geram impacto real nos resultados do negócio.
+              </p>
+            </article>
+            <article>
+              <span className="card-icon" aria-hidden="true">◇</span>
+              <h3>Liderança</h3>
+              <p>Desenvolvimento de equipes de alto desempenho e alinhamento entre tecnologia, negócio e pessoas.</p>
+            </article>
           </div>
         </section>
 
-        <section className="metrics section-shell" id="resultados">
-          <div className="section-heading">
-            <div>
-              <div className="section-label">{"// 03 — RESULTADOS-CHAVE"}</div>
-              <h2>Impacto mensurável</h2>
+        <section className="experience section section-muted" id="experiencia">
+          <div className="content-shell">
+            <div className="section-heading">
+              <div>
+                <p className="section-eyebrow">EXPERIÊNCIA</p>
+                <h2>Experiência Profissional</h2>
+              </div>
+              <p>Trajetória executiva em tecnologia, operações e transformação de negócios.</p>
             </div>
-            <p>
-              Resultados selecionados em eficiência, receita, dados, IA e
-              operação de varejo.
-            </p>
-          </div>
-          <div className="metric-grid">
-            {keyResults.map((result) => (
-              <article className="metric-card" key={result.value + result.label}>
-                <strong>{result.value}</strong>
-                <p>{result.label}</p>
-              </article>
-            ))}
-          </div>
-        </section>
 
-        <section className="experience section-shell" id="experiencia">
-          <div className="experience-heading">
-            <div className="section-label">{"// 04 — EXPERIÊNCIA PROFISSIONAL"}</div>
-            <h2>
-              Uma trajetória de
-              <br />
-              transformação e <span>escala.</span>
-            </h2>
-          </div>
-          <div className="experience-list">
-            {experiences.map((experience, index) => (
-              <article className="experience-item" key={experience.company}>
-                <div className="experience-index">0{index + 1}</div>
-                <div className="experience-content">
-                  <div className="role-meta">
-                    <div>
-                      <p className="role-company">{experience.company}</p>
-                      <h3>{experience.role}</h3>
+            <div className="timeline">
+              {experiences.map((experience, index) => (
+                <article className="timeline-item" key={experience.company}>
+                  <div className="timeline-marker" aria-hidden="true">{String(index + 1).padStart(2, "0")}</div>
+                  <div className="experience-card">
+                    <div className="experience-top">
+                      <div>
+                        <p className="company">{experience.company}</p>
+                        <h3>{experience.role}</h3>
+                      </div>
+                      <div className="experience-meta">
+                        <span>{experience.period}</span>
+                        <span>{experience.location}</span>
+                      </div>
                     </div>
-                    <div className="role-place">
-                      <span>{experience.period}</span>
-                      <span>{experience.location}</span>
-                    </div>
-                  </div>
-                  <p className="role-intro">{experience.intro}</p>
-                  <ul>
-                    {experience.highlights.map((highlight) => (
-                      <li key={highlight}>{highlight}</li>
-                    ))}
-                  </ul>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="education section-shell" id="formacao">
-          <div className="section-heading">
-            <div>
-              <div className="section-label">{"// 05 — FORMAÇÃO & DESENVOLVIMENTO"}</div>
-              <h2>Conhecimento em evolução</h2>
-            </div>
-            <p>
-              Formação em tecnologia e gestão, somada à atualização executiva
-              contínua em inteligência artificial e cibersegurança.
-            </p>
-          </div>
-          <div className="education-grid">
-            <div className="education-list">
-              {education.map((item) => (
-                <article key={item.course}>
-                  <span>{item.year}</span>
-                  <div>
-                    <h3>{item.course}</h3>
-                    <p>{item.institution}</p>
+                    <p className="experience-summary">{experience.summary}</p>
+                    <ul>
+                      {experience.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+                    </ul>
                   </div>
                 </article>
               ))}
-              <article className="executive-update">
-                <span>2025—26</span>
-                <div>
-                  <h3>Atualização executiva</h3>
-                  <p>
-                    Cibersegurança para Executivos na Era da IA · TDS Company
-                    <br />
-                    AI Max — Gestão Executiva de IA · StartSe
-                  </p>
-                </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="projects section" id="projetos">
+          <div className="content-shell">
+            <div className="section-heading">
+              <div>
+                <p className="section-eyebrow">REALIZAÇÕES</p>
+                <h2>Projetos Executados</h2>
+              </div>
+              <p>Iniciativas estratégicas que conectaram tecnologia a impacto mensurável.</p>
+            </div>
+
+            <div className="project-grid">
+              {projects.map((project) => (
+                <article className="project-card" key={project.title}>
+                  <div className="project-image">
+                    <img
+                      src={project.image}
+                      alt=""
+                      loading="lazy"
+                      width="1920"
+                      height="1080"
+                    />
+                  </div>
+                  <div className="project-body">
+                    <p className="project-eyebrow">{project.eyebrow}</p>
+                    <h3>{project.title}</h3>
+                    <p className="project-organization">{project.organization}</p>
+                    <p>{project.description}</p>
+                    <div className="project-result"><span aria-hidden="true">✓</span>{project.result}</div>
+                    <div className="project-tags">
+                      {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="skills section section-muted" id="competencias">
+          <div className="content-shell">
+            <div className="section-heading">
+              <div>
+                <p className="section-eyebrow">EXPERTISE</p>
+                <h2>Competências</h2>
+              </div>
+              <p>Capacidades executivas, técnicas e operacionais construídas ao longo da carreira.</p>
+            </div>
+
+            <div className="skills-grid">
+              {competencies.map((competency) => (
+                <article className="skill-card" key={competency.title}>
+                  <div className="skill-title">
+                    <span aria-hidden="true">{competency.icon}</span>
+                    <h3>{competency.title}</h3>
+                  </div>
+                  <div className="skill-tags">
+                    {competency.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <div className="education-grid">
+              <article>
+                <p className="education-title">Educação & Formação Executiva</p>
+                <div className="education-item"><strong>Gestão de Pessoas e Liderança Organizacional</strong><span>FIA Business School · 2021</span></div>
+                <div className="education-item"><strong>MBA em Gestão Estratégica de TI</strong><span>Fundação Getulio Vargas · 2014</span></div>
+                <div className="education-item"><strong>Tecnologia em Informática</strong><span>FATEC Santo André · 2000</span></div>
+              </article>
+              <article>
+                <p className="education-title">Atualização & Idiomas</p>
+                <div className="education-item"><strong>Cibersegurança para Executivos na Era da IA</strong><span>TDS Company · 2026</span></div>
+                <div className="education-item"><strong>AI Max — Gestão Executiva de IA</strong><span>StartSe · 2025</span></div>
+                <div className="language-row"><span>Inglês <strong>avançado</strong></span><span>Espanhol <strong>intermediário</strong></span></div>
               </article>
             </div>
-            <aside className="stack-panel">
-              <p className="stack-title">TECNOLOGIAS · PLATAFORMAS · FRAMEWORKS</p>
-              <div className="tech-cloud">
-                {technologies.map((technology) => (
-                  <span key={technology}>{technology}</span>
-                ))}
-              </div>
-              <div className="languages">
-                <p>IDIOMAS</p>
-                <div>
-                  <span>Inglês <strong>avançado</strong></span>
-                  <span>Espanhol <strong>intermediário</strong></span>
-                </div>
-              </div>
-            </aside>
           </div>
         </section>
 
-        <section className="project section-shell" id="projeto">
-          <div className="project-card">
-            <div className="project-visual" aria-hidden="true">
-              <div className="orbit orbit-one" />
-              <div className="orbit orbit-two" />
-              <div className="project-core">
-                <strong>ID3</strong>
-                <span>TECH</span>
-              </div>
-            </div>
-            <div className="project-content">
-              <div className="section-label">{"// PROJETO EM DESTAQUE"}</div>
-              <h2>ID3 Tech</h2>
-              <p className="project-lead">
-                Consultoria em tecnologia com foco em governança,
-                infraestrutura, cibersegurança, dados e inteligência artificial.
-              </p>
-              <p>
-                Uma plataforma de atuação orientada a conectar a agenda de
-                tecnologia aos resultados do negócio com visão executiva e
-                profundidade técnica.
-              </p>
-              <a
-                className="text-link"
-                href="https://www.id3.com.br"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Visitar www.id3.com.br <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="contact section-shell" id="contato">
-          <div className="contact-grid">
-            <div>
-              <div className="section-label">{"// 06 — CONTATO"}</div>
-              <h2>
-                Vamos construir o
-                <br />
-                próximo <span>capítulo?</span>
-              </h2>
-            </div>
+        <section className="contact section" id="contato">
+          <div className="content-shell contact-shell">
             <div className="contact-copy">
+              <p className="section-eyebrow">CONTATO</p>
+              <h2>Vamos conectar</h2>
               <p>
-                Disponível para conversas sobre liderança de tecnologia,
-                transformação, varejo, governança, segurança, dados e IA.
+                Estou aberto a novas oportunidades, discussões estratégicas e
+                projetos inovadores em tecnologia e transformação.
               </p>
-              <a
-                className="contact-email"
-                href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20CV%20virtual"
-              >
-                alexribeiro.cio@gmail.com <span aria-hidden="true">↗</span>
+            </div>
+            <div className="contact-grid">
+              <a className="contact-card" href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20id3.tech">
+                <span className="contact-icon" aria-hidden="true">@</span>
+                <div><p>Email</p><strong>alexribeiro.cio@gmail.com</strong></div>
               </a>
-              <div className="social-links">
-                <a
-                  href="https://www.linkedin.com/in/alexcribeiro"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  href="https://github.com/alexribeirocio-eng"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://www.id3.com.br"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ID3 Tech
-                </a>
-              </div>
+              <article className="contact-card">
+                <span className="contact-icon" aria-hidden="true">⌖</span>
+                <div><p>Localização</p><strong>São Paulo, Brasil</strong></div>
+              </article>
+              <a className="contact-card" href="https://www.linkedin.com/in/alexcribeiro" target="_blank" rel="noreferrer">
+                <span className="contact-icon" aria-hidden="true">in</span>
+                <div><p>LinkedIn</p><strong>linkedin.com/in/alexcribeiro</strong></div>
+              </a>
+            </div>
+            <div className="contact-actions">
+              <a className="button button-primary" href="mailto:alexribeiro.cio@gmail.com?subject=Contato%20pelo%20id3.tech">Enviar email</a>
+              <a className="button button-outline" href="https://www.linkedin.com/in/alexcribeiro" target="_blank" rel="noreferrer">Abrir LinkedIn ↗</a>
             </div>
           </div>
         </section>
       </main>
 
       <footer>
-        <div className="section-shell footer-shell">
-          <p>© {new Date().getFullYear()} Aleksandro Castro Ribeiro</p>
-          <p>ID3TECH.COM</p>
+        <div className="content-shell footer-shell">
+          <div className="footer-profile">
+            <div className="brand footer-brand"><span className="brand-monogram" aria-hidden="true">AR</span><span className="brand-name">Alex Ribeiro</span></div>
+            <p>CIO · Liderança Estratégica · Transformação Digital</p>
+          </div>
+          <nav aria-label="Links rápidos do rodapé">
+            <strong>Links rápidos</strong>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#competencias">Competências</a>
+          </nav>
+          <nav aria-label="Conecte-se">
+            <strong>Conecte-se</strong>
+            <a href="https://www.linkedin.com/in/alexcribeiro" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="mailto:alexribeiro.cio@gmail.com">Email ↗</a>
+            <a href="https://github.com/alexribeirocio-eng" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </nav>
+        </div>
+        <div className="content-shell footer-bottom">
+          <p>© {new Date().getFullYear()} Aleksandro Castro Ribeiro. Todos os direitos reservados.</p>
           <a href="#inicio">Voltar ao topo ↑</a>
         </div>
       </footer>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </>
   );
 }

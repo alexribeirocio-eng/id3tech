@@ -7,8 +7,8 @@ async function render() {
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request("https://id3tech.com/", {
-      headers: { accept: "text/html", host: "id3tech.com" },
+    new Request("https://id3.tech/", {
+      headers: { accept: "text/html", host: "id3.tech" },
     }),
     {
       ASSETS: {
@@ -32,7 +32,7 @@ test("renders the virtual CV with discovery metadata", async () => {
   assert.match(html, /<title>Aleksandro Ribeiro \| CIO/);
   assert.match(html, /Aleksandro[\s\S]*Ribeiro\./);
   assert.match(html, /application\/ld\+json/);
-  assert.match(html, /https:\/\/id3tech\.com\/og\.png/);
+  assert.match(html, /https:\/\/id3\.tech\/og-4x3\.png/);
   assert.match(html, /alexribeiro\.cio@gmail\.com/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|SkeletonPreview/);
 });

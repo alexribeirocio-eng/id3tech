@@ -1,27 +1,28 @@
 import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
 });
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#07111f",
+  themeColor: "#ffffff",
 };
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
-  const host = requestHeaders.get("host") ?? "id3tech.com";
+  const host = requestHeaders.get("host") ?? "id3.tech";
   const protocol =
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
@@ -29,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = "Aleksandro Ribeiro | CIO e Diretor Executivo de Tecnologia";
   const description =
     "CV virtual de Aleksandro Ribeiro, CIO e Diretor Executivo de Tecnologia com 25+ anos de carreira em varejo, omnichannel, dados, IA e cibersegurança.";
-  const socialImage = new URL("/og.png", baseUrl).toString();
+  const socialImage = new URL("/og-4x3.png", baseUrl).toString();
 
   return {
     metadataBase: baseUrl,
@@ -61,8 +62,8 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [
         {
           url: socialImage,
-          width: 1200,
-          height: 630,
+          width: 1448,
+          height: 1086,
           alt: "Aleksandro Ribeiro — CIO, Tecnologia, Varejo, Dados e IA",
         },
       ],
@@ -93,7 +94,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${inter.variable} ${poppins.variable}`}>
         {children}
       </body>
     </html>
