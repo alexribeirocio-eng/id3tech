@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://id3tech.com/sitemap.xml",
-    host: "https://id3tech.com",
+    sitemap: "https://id3.tech/sitemap.xml",
+    host: "https://id3.tech",
   };
 }

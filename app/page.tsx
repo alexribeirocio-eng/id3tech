@@ -154,7 +154,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Aleksandro Castro Ribeiro",
   alternateName: "Alex Ribeiro",
-  url: "https://id3tech.com",
+  url: "https://id3.tech",
   email: "mailto:alexribeiro.cio@gmail.com",
   jobTitle: "CIO e Diretor Executivo de Tecnologia e Transformação",
   address: {
@@ -566,7 +566,7 @@ export default function Home() {
       <footer>
         <div className="section-shell footer-shell">
           <p>© {new Date().getFullYear()} Aleksandro Castro Ribeiro</p>
-          <p>ID3TECH.COM</p>
+          <p>ID3.TECH</p>
           <a href="#inicio">Voltar ao topo ↑</a>
         </div>
       </footer>
